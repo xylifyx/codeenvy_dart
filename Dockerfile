@@ -10,7 +10,7 @@ RUN sudo apt-get update && sudo apt-get install -y dart
 EXPOSE 8080
 
 # Run instructions are identical to commands in your local Unix terminal
-# RUN echo 'hello world'
+RUN echo 'export PATH="/usr/lib/dart/bin:${PATH}"' >> /home/user/.bashrc
 
 # Map application port to the IDE client
 ENV CODENVY_APP_PORT_8080_HTTP 8080
