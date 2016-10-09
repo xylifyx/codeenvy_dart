@@ -1,4 +1,4 @@
-FROM codenvy/debian_jre
+FROM codenvy/ubuntu_jre
 RUN sudo apt-get update && \
     sudo apt-get install -y apt-transport-https 
 RUN sudo sh -c 'curl https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add -'
